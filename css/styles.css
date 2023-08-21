@@ -220,6 +220,7 @@ select {
 
 .header {
   padding: 1em 0;
+  display: grid;
   border-bottom: 0.15rem solid var(--c-accent);
   place-items: center;
   position: fixed;
@@ -228,19 +229,34 @@ select {
 }
 
 .navbar {
+  display: flex;
   border-top: 0.15rem solid var(--c-accent);
   position: fixed;
+  gap: 0;
   justify-content: space-around;
   bottom: 0;
   width: 100%;
   z-index: 1;
-  padding: 1em 0;
 }
 
 .nav-icon {
   width: 2em;
   height: 2em;
-  fill: var(--c-accent);
   filter: invert(80%) sepia(91%) saturate(324%) hue-rotate(344deg)
     brightness(97%) contrast(96%);
+}
+.navbar > a {
+  display: grid;
+  width: calc(100% / 3);
+  place-items: center;
+  height: 4rem;
+}
+
+.active {
+  background-color: var(--c-accent);
+}
+
+.active > .nav-icon {
+  filter: invert(46%) sepia(58%) saturate(6497%) hue-rotate(230deg)
+    brightness(99%) contrast(92%);
 }
