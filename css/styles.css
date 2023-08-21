@@ -227,3 +227,11 @@ select {
   z-index: 1;
 }
 
+.navbar {
+  border-top: 0.15rem solid var(--c-accent);
+  position: fixed;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
