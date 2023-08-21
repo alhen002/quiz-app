@@ -213,3 +213,17 @@ select {
 .text-accent {
   color: var(--c-accent);
 }
+
+/*...........................*/
+/*COMPONENTS.................*/
+/*...........................*/
+
+.header {
+  padding: 2em 0;
+  border-bottom: 0.15rem solid var(--c-accent);
+  place-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
