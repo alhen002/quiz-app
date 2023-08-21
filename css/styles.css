@@ -219,7 +219,7 @@ select {
 /*...........................*/
 
 .header {
-  padding: 2em 0;
+  padding: 1em 0;
   border-bottom: 0.15rem solid var(--c-accent);
   place-items: center;
   position: fixed;
@@ -234,4 +234,13 @@ select {
   bottom: 0;
   width: 100%;
   z-index: 1;
+  padding: 1em 0;
+}
+
+.nav-icon {
+  width: 2em;
+  height: 2em;
+  fill: var(--c-accent);
+  filter: invert(80%) sepia(91%) saturate(324%) hue-rotate(344deg)
+    brightness(97%) contrast(96%);
 }
