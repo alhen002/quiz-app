@@ -108,16 +108,6 @@ select {
 /*...........................*/
 
 /* general */
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
-}
-
-.grid {
-  display: grid;
-  gap: var(--gap, 1rem);
-}
-
 .container {
   max-width: var(--max-width, 80rem);
   margin-inline: auto;
