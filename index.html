@@ -10,18 +10,21 @@
     <header class="bg-primary header">
       <h1 class="text-accent ff-sans-mono fs-700 uppercase">BirdQuizz</h1>
     </header>
-    <main>
-      <section class="card-wrapper container" role="feed">
-        <article class="card">
-          <h2 class="uppercase fs-600 ff-sans-mono">
+    <main class="container "aria-labelledby="question-title" role="feed">
+      <h2 id="question-title" class="text-dark ff-sans-mono fs-600">Questions</h2>
+      <section
+        class="card-wrapper "
+      >
+        <article class="card" aria-labelledby="article-title-1">
+          <h3 id="article-title-1" class="uppercase fs-600 ff-sans-mono">
             <span class="text-accent fs-600">#1 </span>What is the fastest bird
             on short range?
-          </h2>
+          </h3>
           <a href="bookmarks.html" aria-label="bookmark"
             ><img class="nav-icon" src="assets/img/bookmark-regular.svg"
           /></a>
           <button>Show Answer</button>
-          <p class="text-accent fs-400 ff-sans-mono hidden">
+          <p class="text-black fs-400 ff-sans-mono hidden">
             The Pidgeon. 100 - 120 kmh / h
           </p>
           <ul class="tag-list">
@@ -30,16 +33,16 @@
             <li>speed</li>
           </ul>
         </article>
-        <article class="card">
-          <h2 class="uppercase fs-600 ff-sans-mono">
+        <article class="card" aria-labelledby="article-title-2">
+          <h3 id="article-title-2" class="uppercase fs-600 ff-sans-mono">
             <span class="text-accent fs-600">#2 </span>What is the fastest bird
             on long range?
-          </h2>
+          </h3>
           <a href="bookmarks.html" aria-label="bookmark"
             ><img class="nav-icon" src="assets/img/bookmark-regular.svg"
           /></a>
           <button>Show Answer</button>
-          <p class="text-accent fs-400 ff-sans-mono">
+          <p class="text-black fs-400 ff-sans-mono">
             The Great Snipe snipe covered a distance of 6.700 kilometers with a
             speed of 80 km / h .
           </p>
@@ -49,16 +52,16 @@
             <li>speed</li>
           </ul>
         </article>
-        <article class="card">
-          <h2 class="uppercase fs-600 ff-sans-mono">
+        <article class="card" aria-labelledby="article-title-3">
+          <h3 id="article-title-3" class="uppercase fs-600 ff-sans-mono">
             <span class="text-accent fs-600">#3 </span>What is the fastest bird
             in waters?
-          </h2>
+          </h3>
           <a href="bookmarks.html" aria-label="bookmark"
             ><img class="nav-icon" src="assets/img/bookmark-regular.svg"
           /></a>
           <button>Show Answer</button>
-          <p class="text-accent fs-400 ff-sans-mono">
+          <p class="text-black fs-400 ff-sans-mono">
             The Gentoo pengiun. 27 km / h while swimming.
           </p>
           <ul class="tag-list">
@@ -67,16 +70,16 @@
             <li>speed</li>
           </ul>
         </article>
-        <article class="card">
-          <h2 class="uppercase fs-600 ff-sans-mono">
+        <article class="card" aria-labelledby="article-title-4">
+          <h3 id="article-title-4" class="uppercase fs-600 ff-sans-mono">
             <span class="text-accent fs-600">#4 </span>What is the fastest bird
             running on the land?
-          </h2>
+          </h3>
           <a href="bookmarks.html" aria-label="bookmark"
             ><img class="nav-icon" src="assets/img/bookmark-regular.svg"
           /></a>
           <button>Show Answer</button>
-          <p class="text-accent fs-400 ff-sans-mono">
+          <p class="text-black fs-400 ff-sans-mono">
             The Ostrich. Sprints up to 69 km / h.
           </p>
           <ul class="tag-list">
@@ -85,16 +88,16 @@
             <li>speed</li>
           </ul>
         </article>
-        <article class="card">
-          <h2 class="uppercase fs-600 ff-sans-mono">
-            <span class="text-accent fs-600">#4 </span>What is the smallest bird
+        <article class="card" aria-labelledby="article-title-5">
+          <h3 id="article-title-5" class="uppercase fs-600 ff-sans-mono">
+            <span class="text-accent fs-600">#5 </span>What is the smallest bird
             on earth?
-          </h2>
+          </h3>
           <a href="bookmarks.html" aria-label="bookmark"
             ><img class="nav-icon" src="assets/img/bookmark-regular.svg"
           /></a>
           <button>Show Answer</button>
-          <p class="text-accent fs-400 ff-sans-mono">
+          <p class="text-black fs-400 ff-sans-mono">
             The Bee Hummingbird. The female is 6.1cm long and weights 2.6g.
           </p>
           <ul class="tag-list">
@@ -103,16 +106,16 @@
             <li>animal</li>
           </ul>
         </article>
-        <article class="card">
-          <h2 class="uppercase fs-600 ff-sans-mono">
-            <span class="text-accent fs-600">#5 </span>What is the largest bird
+        <article class="card" aria-labelledby="article-title-6">
+          <h3 id="article-title-6" class="uppercase fs-600 ff-sans-mono">
+            <span class="text-accent fs-600">#6 </span>What is the largest bird
             on earth?
-          </h2>
+          </h3>
           <a href="bookmarks.html" aria-label="bookmark"
             ><img class="nav-icon" src="assets/img/bookmark-regular.svg"
           /></a>
           <button>Show Answer</button>
-          <p class="text-accent fs-400 ff-sans-mono">
+          <p class="text-black fs-400 ff-sans-mono">
             The Ostrich. It's up to 2.7 meters tall and weights up to 130 kg.
           </p>
           <ul class="tag-list">
@@ -124,15 +127,24 @@
       </section>
     </main>
     <footer>
-      <nav class="navbar bg-primary">
+      <nav class="navbar bg-primary" aria-label="navigation">
         <a class="active" href="index.html"
-          ><img class="nav-icon" src="assets/img/house-solid.svg"
+          ><img
+            class="nav-icon"
+            src="assets/img/house-solid.svg"
+            alt="home-icon"
         /></a>
         <a href="bookmarks.html"
-          ><img class="nav-icon" src="assets/img/bookmark-solid.svg"
+          ><img
+            class="nav-icon"
+            src="assets/img/bookmark-solid.svg"
+            alt="bookmark-icon"
         /></a>
         <a href="profile.html"
-          ><img class="nav-icon" src="assets/img/user-solid.svg"
+          ><img
+            class="nav-icon"
+            src="assets/img/user-solid.svg"
+            alt="profile-icon"
         /></a>
       </nav>
     </footer>
