@@ -30,7 +30,7 @@
   z-index: 1;
 }
 
-.nav-icon {
+.navbar__icon {
   width: 2em;
   height: 2em;
   filter: invert(80%) sepia(91%) saturate(324%) hue-rotate(344deg)
@@ -48,16 +48,14 @@
   background-color: rgb(var(--c-accent));
 }
 
-.active > .nav-icon {
+.active > .navbar__icon {
   filter: invert(46%) sepia(58%) saturate(6497%) hue-rotate(230deg)
     brightness(99%) contrast(92%);
 }
 
-
 main {
   padding: 12rem 0;
 }
-
 
 .card-wrapper {
   display: grid;
@@ -78,10 +76,14 @@ main {
   box-shadow: 0.5rem 0.5rem rgb(var(--c-dark));
 }
 
-.card > a > .nav-icon {
+.card__icon {
   position: absolute;
   top: 0.75rem;
   right: 0.5rem;
+  width: 2em;
+  height: 2em;
+  filter: invert(80%) sepia(91%) saturate(324%) hue-rotate(344deg)
+    brightness(97%) contrast(96%);
 }
 
 .card > .tag-list {
