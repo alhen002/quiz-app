@@ -9,13 +9,13 @@
   </head>
   <body>
     <header class="bg-primary header">
-      <h1 class="text-accent ff-sans-mono fs-700 uppercase">BirdQuizz</h1>
+      <h1 class="header__title">BirdQuizz</h1>
     </header>
     <main class="container" aria-labelledby="question-title" role="feed">
       <h2 id="question-title" class="text-dark ff-sans-mono fs-600">
         Questions
       </h2>
-      <section class="card-wrapper">
+      <section class="card__wrapper">
         <article class="card" aria-labelledby="article-title-1">
           <h3 id="article-title-1" class="uppercase fs-600 ff-sans-mono">
             <span class="text-accent fs-600">#1 </span>What is the fastest bird
@@ -24,14 +24,14 @@
           <a href="bookmarks.html" aria-label="bookmark"
             ><img class="card__icon" src="assets/img/bookmark-regular.svg"
           /></a>
-          <button>Show Answer</button>
+          <button class="card__button">Show Answer</button>
           <p class="text-black fs-400 ff-sans-mono hidden">
             The Pidgeon. 100 - 120 kmh / h
           </p>
-          <ul class="tag-list">
-            <li>bird</li>
-            <li>animal</li>
-            <li>speed</li>
+          <ul class="card__taglist">
+            <li class="card__taglist__item">bird</li>
+            <li class="card__taglist__item">animal</li>
+            <li class="card__taglist__item">speed</li>
           </ul>
         </article>
         <article class="card" aria-labelledby="article-title-2">
@@ -42,15 +42,15 @@
           <a href="bookmarks.html" aria-label="bookmark"
             ><img class="card__icon" src="assets/img/bookmark-regular.svg"
           /></a>
-          <button>Show Answer</button>
+          <button class="card__button">Show Answer</button>
           <p class="text-black fs-400 ff-sans-mono hidden">
             The Great Snipe snipe covered a distance of 6.700 kilometers with a
             speed of 80 km / h .
           </p>
-          <ul class="tag-list">
-            <li>animal</li>
-            <li>bird</li>
-            <li>speed</li>
+          <ul class="card__taglist">
+            <li class="card__taglist__item">animal</li>
+            <li class="card__taglist__item">bird</li>
+            <li class="card__taglist__item">speed</li>
           </ul>
         </article>
         <article class="card" aria-labelledby="article-title-3">
@@ -61,14 +61,14 @@
           <a href="bookmarks.html" aria-label="bookmark"
             ><img class="card__icon" src="assets/img/bookmark-regular.svg"
           /></a>
-          <button>Show Answer</button>
+          <button class="card__button">Show Answer</button>
           <p class="text-black fs-400 ff-sans-mono hidden">
             The Gentoo pengiun. 27 km / h while swimming.
           </p>
-          <ul class="tag-list">
-            <li>water</li>
-            <li>bird</li>
-            <li>speed</li>
+          <ul class="card__taglist">
+            <li class="card__taglist__item">water</li>
+            <li class="card__taglist__item">bird</li>
+            <li class="card__taglist__item">speed</li>
           </ul>
         </article>
         <article class="card" aria-labelledby="article-title-4">
@@ -79,14 +79,14 @@
           <a href="bookmarks.html" aria-label="bookmark"
             ><img class="card__icon" src="assets/img/bookmark-regular.svg"
           /></a>
-          <button>Show Answer</button>
+          <button class="card__button">Show Answer</button>
           <p class="text-black fs-400 ff-sans-mono hidden">
             The Ostrich. Sprints up to 69 km / h.
           </p>
-          <ul class="tag-list">
-            <li>land</li>
-            <li>bird</li>
-            <li>speed</li>
+          <ul class="card__taglist">
+            <li class="card__taglist__item">land</li>
+            <li class="card__taglist__item">bird</li>
+            <li class="card__taglist__item">speed</li>
           </ul>
         </article>
         <article class="card" aria-labelledby="article-title-5">
@@ -97,14 +97,14 @@
           <a href="bookmarks.html" aria-label="bookmark"
             ><img class="card__icon" src="assets/img/bookmark-regular.svg"
           /></a>
-          <button>Show Answer</button>
+          <button class="card__button">Show Answer</button>
           <p class="text-black fs-400 ff-sans-mono hidden">
             The Bee Hummingbird. The female is 6.1cm long and weights 2.6g.
           </p>
-          <ul class="tag-list">
-            <li>size</li>
-            <li>bird</li>
-            <li>animal</li>
+          <ul class="card__taglist">
+            <li class="card__taglist__item">size</li>
+            <li class="card__taglist__item">bird</li>
+            <li class="card__taglist__item">animal</li>
           </ul>
         </article>
         <article class="card" aria-labelledby="article-title-6">
@@ -115,33 +115,33 @@
           <a href="bookmarks.html" aria-label="bookmark"
             ><img class="card__icon" src="assets/img/bookmark-regular.svg"
           /></a>
-          <button>Show Answer</button>
+          <button class="card__button">Show Answer</button>
           <p class="text-black fs-400 ff-sans-mono hidden">
             The Ostrich. It's up to 2.7 meters tall and weights up to 130 kg.
           </p>
-          <ul class="tag-list">
-            <li>animal</li>
-            <li>bird</li>
-            <li>size</li>
+          <ul class="card__taglist">
+            <li class="card__taglist__item">animal</li>
+            <li class="card__taglist__item">bird</li>
+            <li class="card__taglist__item">size</li>
           </ul>
         </article>
       </section>
     </main>
     <footer>
       <nav class="navbar bg-primary" aria-label="navigation">
-        <a class="active" href="index.html"
+        <a class="navbar__tab active" href="index.html"
           ><img
             class="navbar__icon"
             src="assets/img/house-solid.svg"
             alt="home-icon"
         /></a>
-        <a href="bookmarks.html"
+        <a class="navbar__tab" href="bookmarks.html"
           ><img
             class="navbar__icon"
             src="assets/img/bookmark-solid.svg"
             alt="bookmark-icon"
         /></a>
-        <a href="profile.html"
+        <a class="navbar__tab" href="profile.html"
           ><img
             class="navbar__icon"
             src="assets/img/user-solid.svg"

@@ -2,129 +2,14 @@
 @import "./reset.css";
 @import "./properties.css";
 @import "./utilities.css";
+@import "components.css";
 @import "./fonts.css";
-
-/*...........................*/
-/*COMPONENTS.................*/
-/*...........................*/
-
-/* header */
-.header {
-  padding: 1em 0;
-  display: grid;
-  border-bottom: 0.15rem solid rgb(var(--c-accent));
-  place-items: center;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-/* navbar */
-.navbar {
-  display: flex;
-  border-top: 0.15rem solid rgb(var(--c-accent));
-  position: fixed;
-  gap: 0;
-  justify-content: space-around;
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.navbar__icon {
-  width: 2em;
-  height: 2em;
-  filter: invert(80%) sepia(91%) saturate(324%) hue-rotate(344deg)
-    brightness(97%) contrast(96%);
-}
-
-.navbar > a {
-  display: grid;
-  width: calc(100% / 3);
-  place-items: center;
-  height: 4rem;
-}
-
-.active {
-  background-color: rgb(var(--c-accent));
-}
-
-.active > .navbar__icon {
-  filter: invert(46%) sepia(58%) saturate(6497%) hue-rotate(230deg)
-    brightness(99%) contrast(92%);
-}
 
 main {
   padding: 12rem 0;
 }
 
-.card-wrapper {
-  display: grid;
-  gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
-}
-
-.card {
-  display: grid;
-  place-items: center;
-  position: relative;
-  padding: 2rem;
-  padding-bottom: 4rem;
-  row-gap: 2rem;
-  border-radius: 0.5em;
-  background-color: rgb(var(--c-primary) / 0.9);
-  border: 0.25rem solid rgb(var(--c-accent));
-  box-shadow: 0.5rem 0.5rem rgb(var(--c-dark));
-}
-
-.card__icon {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.5rem;
-  width: 2em;
-  height: 2em;
-  filter: invert(80%) sepia(91%) saturate(324%) hue-rotate(344deg)
-    brightness(97%) contrast(96%);
-}
-
-.card > .tag-list {
-  position: absolute;
-  display: flex;
-  left: 0;
-  bottom: 0;
-  gap: 0.5em;
-  list-style: none;
-}
-.tag-list > li {
-  background-color: rgb(var(--c-accent));
-  padding: 0.15em 0.25em;
-  border-radius: 0.25em;
-  color: rgb(var(--c-black));
-  font-size: 1rem;
-  color: rgb(var(--c-black));
-  font-family: "Roboto Mono", monospace;
-}
-
-.tag-list > li::before {
-  content: "#";
-}
-
-button {
-  padding: 0.5em 1em;
-  border-radius: 0.25em;
-  border: 0.25rem solid rgb(var(--c-dark));
-  background-color: rgb(var(--c-accent));
-  color: rgb(var(--c-black));
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-button:hover {
-  background-color: rgb(var(--c-dark));
-  color: rgb(var(--c-accent));
-  transition: color 200ms ease-in-out, background-color 600ms ease-in-out;
-}
-
-.hidden {
-  display: none;
+main:hover .card {
+  transform: translateY(15px);
+  transition: transform 3s ease-in-out;
 }
