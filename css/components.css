@@ -18,9 +18,10 @@
   padding-bottom: 4rem;
   row-gap: 2rem;
   border-radius: 0.5em;
-  background-color: rgb(var(--c-primary) / 0.9);
+  background-color: rgb(var(--c-primary) / 0.75);
   border: 0.25rem solid rgb(var(--c-accent));
   box-shadow: 0.5rem 0.5rem rgb(var(--c-dark));
+  backdrop-filter: blur(0.25rem);
 }
 
 .card__icon {
@@ -51,7 +52,7 @@
   font-family: "Roboto Mono", monospace;
 }
 
-.card_taglist_item::before {
+.card__taglist__item::before {
   content: "#";
 }
 
@@ -74,22 +75,25 @@
 
 /* Navbar */
 
-.navbar__wrapper {
+/* .navbar__wrapper {
   width: 100%;
   position: fixed;
   bottom: 0;
-}
+  left: 12.5%;
+  transition: transform 1s ease-in-out;
+} */
 
 .navbar {
   display: flex;
-  border-top: 0.15rem solid rgb(var(--c-accent));
+  border: 0.25rem solid rgb(var(--c-accent));
   position: fixed;
   gap: 0;
   justify-content: space-around;
-  bottom: -12rem;
+  bottom: 0;
   width: 100%;
   z-index: 1;
-  transition: transform 0.75s ease-in-out;
+  backdrop-filter: blur(0.25rem);
+  opacity: 0.75;
 }
 
 .navbar__icon {
@@ -115,6 +119,17 @@
     brightness(99%) contrast(92%);
 }
 
+/* .navbar__wrapper:hover,
+.navbar__wrapper:active,
+.navbar__wrapper:focus .navbar {
+  transform: translateY(-14rem);
+  transition: transform 1s ease-in-out 0.3s;
+} */
+
+/* .navbar__handler {
+  height: 2rem;
+} */
+
 /* Header */
 .header {
   padding: 1em 0;
@@ -124,6 +139,7 @@
   position: fixed;
   width: 100%;
   z-index: 1;
+  background-color: rgb(var(--c-primary) / 0.75);
 }
 .header__title {
   font-size: var(--fs-700);
@@ -133,4 +149,36 @@
   font-style: italic;
   text-shadow: -0.2rem -0.2rem 0 black;
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .header {
+    width: 75%;
+    left: 12.5%;
+    border-radius: 2rem;
+  }
+  .navbar__wrapper:hover,
+  .navbar__wrapper:active,
+  .navbar__wrapper:focus .navbar {
+    transform: translateY(-14rem);
+    transition: transform 1s ease-in-out 0.3s;
+  }
+  .navbar__handler {
+    height: 2rem;
+  }
+  .navbar {
+    bottom: -12rem;
+    width: 75%;
+    border-radius: 2rem;
+  }
+  .navbar__wrapper {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 12.5%;
+    transition: transform 1s ease-in-out;
+  }
+  .navbar__tab {
+    border-radius: 1.575rem;
+  }
 }
