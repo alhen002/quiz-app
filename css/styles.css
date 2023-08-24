@@ -9,7 +9,13 @@ main {
   padding: 12rem 0;
 }
 
-main:hover .card {
-  transform: translateY(15px);
-  transition: transform 3s ease-in-out;
+.navbar__wrapper:hover,
+.navbar__wrapper:active,
+.navbar__wrapper:focus .navbar {
+  transform: translateY(-12rem);
+  transition: transform 0.5s ease-in-out 0.3s;
+}
+
+.navbar__handler {
+  height: 4rem;
 }

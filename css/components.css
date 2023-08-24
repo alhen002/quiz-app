@@ -74,15 +74,22 @@
 
 /* Navbar */
 
+.navbar__wrapper {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
 .navbar {
   display: flex;
   border-top: 0.15rem solid rgb(var(--c-accent));
   position: fixed;
   gap: 0;
   justify-content: space-around;
-  bottom: 0;
+  bottom: -12rem;
   width: 100%;
   z-index: 1;
+  transition: transform 0.75s ease-in-out;
 }
 
 .navbar__icon {
