@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BirdQuizz - Bookmarks</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="/index.js" defer></script>
   </head>
   <body>
     <header class="bg-primary header">
       <h1 class="text-accent ff-sans-mono fs-700 uppercase">BirdQuizz</h1>
     </header>
-    <main>
+    <main class="container" aria-labelledby="question-title" role="feed">
+      <h2 id="question-title" class="text-dark ff-sans-mono fs-600">
+        Questions
+      </h2>
       <section class="card-wrapper container">
-        <article class="card">
-          <h2 class="uppercase fs-600 ff-sans-mono">
+        <article class="card" aria-labelledby="article-title-1">
+          <h3 id="article-title-1" class="uppercase fs-600 ff-sans-mono">
             <span class="text-accent fs-600">#1 </span>What is the fastest bird
             on short range?
-          </h2>
+          </h3>
           <a href="bookmarks.html" aria-label="bookmark"
-            ><img class="nav-icon" src="assets/img/bookmark-solid.svg"
+            ><img class="card__icon" src="assets/img/bookmark-solid.svg"
           /></a>
           <button>Show Answer</button>
-          <p class="text-accent fs-400 ff-sans-mono">
+          <p class="text-black fs-400 ff-sans-mono hidden">
             The Pidgeon. 100 - 120 kmh / h
           </p>
           <ul class="tag-list">
@@ -30,16 +34,16 @@
             <li>speed</li>
           </ul>
         </article>
-        <article class="card">
-          <h2 class="uppercase fs-600 ff-sans-mono">
+        <article class="card" aria-labelledby="article-title-2">
+          <h3 id="article-title-2" class="uppercase fs-600 ff-sans-mono">
             <span class="text-accent fs-600">#2 </span>What is the fastest bird
             on long range?
-          </h2>
+          </h3>
           <a href="bookmarks.html" aria-label="bookmark"
-            ><img class="nav-icon" src="assets/img/bookmark-solid.svg"
+            ><img class="card__icon" src="assets/img/bookmark-solid.svg"
           /></a>
           <button>Show Answer</button>
-          <p class="text-accent fs-400 ff-sans-mono">
+          <p class="text-black fs-400 ff-sans-mono hidden">
             The Great Snipe snipe covered a distance of 6.700 kilometers with a
             speed of 80 km / h .
           </p>
@@ -54,13 +58,13 @@
     <footer>
       <nav class="navbar bg-primary">
         <a href="index.html"
-          ><img class="nav-icon" src="assets/img/house-solid.svg"
+          ><img class="navbar__icon" src="assets/img/house-solid.svg"
         /></a>
         <a class="active" href="bookmarks.html"
-          ><img class="nav-icon" src="assets/img/bookmark-solid.svg"
+          ><img class="navbar__icon" src="assets/img/bookmark-solid.svg"
         /></a>
         <a href="profile.html"
-          ><img class="nav-icon" src="assets/img/user-solid.svg"
+          ><img class="navbar__icon" src="assets/img/user-solid.svg"
         /></a>
       </nav>
     </footer>
