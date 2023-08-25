@@ -18,7 +18,7 @@
   padding-bottom: 4rem;
   border-radius: 0.5em;
   background-color: rgb(var(--c-primary) / 0.75);
-  border: 0.25rem solid rgb(var(--c-accent));
+  border: 0.15rem solid rgb(var(--c-black));
   box-shadow: 0.5rem 0.5rem rgb(var(--c-dark));
   backdrop-filter: blur(0.25rem);
 }
@@ -123,8 +123,8 @@
 .navbar__icon {
   width: 2em;
   height: 2em;
-  filter: invert(80%) sepia(91%) saturate(324%) hue-rotate(344deg)
-    brightness(97%) contrast(96%);
+  filter: invert(32%) sepia(84%) saturate(2135%) hue-rotate(229deg)
+    brightness(98%) contrast(94%);
 }
 
 .navbar__tab {
@@ -135,12 +135,12 @@
 }
 
 .active {
-  background-color: rgb(var(--c-accent));
+  background-color: rgb(var(--c-primary));
 }
 
 .active > .navbar__icon {
-  filter: invert(46%) sepia(58%) saturate(6497%) hue-rotate(230deg)
-    brightness(99%) contrast(92%);
+  filter: invert(0%) sepia(0%) saturate(1406%) hue-rotate(317deg)
+    brightness(100%) contrast(90%);
 }
 
 /* Header */
@@ -192,7 +192,7 @@
     transition: transform 1s ease-in-out;
   }
   .navbar__tab {
-    border-radius: 1.575rem;
+    border-radius: 1.85rem;
   }
 
   .card__title {
