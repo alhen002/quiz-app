@@ -1,4 +1,4 @@
-const allCards = document.querySelectorAll("article");
+const allCards = document.querySelectorAll("[data-js='article']");
 
 allCards.forEach((article) => {
   article.querySelector(":scope button").addEventListener("click", () => {
