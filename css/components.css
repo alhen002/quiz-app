@@ -109,7 +109,7 @@
 
 .navbar {
   display: flex;
-  border: 0.15rem solid rgb(var(--c-black));
+  border-top: 0.15rem solid rgb(var(--c-black));
   position: fixed;
   gap: 0;
   justify-content: space-around;
@@ -164,6 +164,32 @@
   text-decoration: underline;
 }
 
+/* Profile */
+
+.profile {
+  margin-inline: auto;
+  width: 90%;
+}
+
+.profile > * {
+  margin: 0 0 2rem;
+}
+
+.profile__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile__card-img {
+  border-radius: 50%;
+}
+
+.profile__intro {
+  margin-inline: auto;
+  width: 75%;
+}
+
 @media (min-width: 768px) {
   .header {
     width: 75%;
@@ -177,7 +203,7 @@
     transition: transform 1s ease-in-out 0.3s;
   }
   .navbar__handler {
-    height: 2rem;
+    height: 4rem;
   }
   .navbar {
     bottom: -12rem;

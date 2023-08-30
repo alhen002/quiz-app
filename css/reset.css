@@ -70,16 +70,6 @@ body {
   z-index: -1;
   opacity: 0.3;
 }
-body:hover .background-2 {
-  animation: move;
-  animation-duration: 125s;
-  animation-timeline: infinite;
-}
-body:hover .background-1 {
-  animation: move;
-  animation-duration: 125s;
-  animation-timeline: infinite;
-}
 
 @keyframes move {
   0% {
