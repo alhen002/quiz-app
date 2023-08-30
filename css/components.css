@@ -32,6 +32,9 @@
   filter: invert(80%) sepia(91%) saturate(324%) hue-rotate(344deg)
     brightness(97%) contrast(96%);
 }
+.card__icon:hover {
+  cursor: pointer;
+}
 
 .card__taglist {
   position: absolute;
