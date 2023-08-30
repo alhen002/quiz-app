@@ -199,14 +199,16 @@
   .navbar__wrapper:hover,
   .navbar__wrapper:active,
   .navbar__wrapper:focus .navbar {
-    transform: translateY(-14rem);
+    transform: translateY(-9rem);
     transition: transform 1s ease-in-out 0.3s;
   }
   .navbar__handler {
+    width: 75%;
     height: 4rem;
   }
   .navbar {
-    bottom: -12rem;
+    margin-inline: auto;
+    bottom: -6rem;
     width: 75%;
     border-radius: 2rem;
   }
