@@ -5,6 +5,7 @@
 /* Card */
 
 .card__wrapper {
+  margin-top: 6rem;
   display: grid;
   gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
@@ -191,6 +192,34 @@
 .profile__intro {
   margin-inline: auto;
   width: 75%;
+}
+
+.form {
+  margin-inline: auto;
+  max-width: 75%;
+  display: grid;
+  gap: 1em;
+  align-items: center;
+}
+.form__div {
+  display: grid;
+  gap: 0.5em;
+  border: 0;
+}
+.form__input {
+  background-color: rgb(var(--c-primary) / 0.75);
+  border: 0.15rem solid rgb(var(--c-black));
+  color: rgb(var(--c-accent));
+}
+.form__label {
+  color: rgb(var(--c-accent));
+  text-shadow: rgb(var(--c-black)) 0.1rem 0.1rem 0;
+}
+
+.form__button {
+  background-color: rgb(var(--c-primary));
+  color: rgb(var(--c-accent));
+  border: 0.15rem solid rgb(var(--c-black));
 }
 
 @media (min-width: 768px) {
