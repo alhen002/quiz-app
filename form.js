@@ -6,8 +6,9 @@ const formDivs = document.querySelectorAll("[data-js='form-div']");
 formDivs.forEach((div) => {
   const textarea = div.querySelector("[data-js='textarea']");
   const span = div.querySelector("[data-js='remaining']");
+  const maxLength = textarea.getAttribute("maxlength");
   textarea.addEventListener("input", () => {
-    const remaining = 150 - textarea.value.length;
+    const remaining = maxLength - textarea.value.length;
     span.textContent = remaining;
   });
 });
