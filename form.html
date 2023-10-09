@@ -5,12 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BirdQuizz - Form</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="/form.js" defer></script>
   </head>
   <body>
     <header class="bg-primary header">
       <h1 class="header__title">BirdQuizz</h1>
     </header>
-    <main></main>
+    <main>
+      <form class="form" data-js="form">
+        <fieldset class="form__div" data-js="form-div">
+          <label class="form__label" id="qLabel" for="question"
+            >Your Question</label
+          >
+          <textarea
+            class="form__input"
+            id="question"
+            data-js="textarea"
+            aria-labelledby="qLabel"
+            name="question"
+            maxlength="150"
+            rows="9"
+          ></textarea>
+          <p class="form__subtitle" data-js="form-subtitle">
+            <span class="subtitle__remaining-question" data-js="remaining"
+              >150</span
+            >
+            characters remaining.
+          </p>
+        </fieldset>
+        <fieldset class="form__div" data-js="form-div">
+          <label class="form__label" id="aLabel" for="answer"
+            >Your Answer</label
+          >
+          <textarea
+            class="form__input"
+            id="answer"
+            aria-labelledby="aLabel"
+            data-js="textarea"
+            name="answer"
+            rows="9"
+            maxlength="150"
+          ></textarea>
+          <p class="form__subtitle" data-js="form-subtitle">
+            <span class="subtitle__remaining-answer" data-js="remaining"
+              >150</span
+            >
+            characters remaining.
+          </p>
+        </fieldset>
+        <label class="form__label" for="tag">Tag</label>
+        <input type="text" id="tag" name="tag" class="form__input" />
+        <button class="form__button" type="submit">Submit</button>
+      </form>
+      <section class="card__wrapper" data-js="card-wrapper"></section>
+    </main>
     <footer>
       <div class="navbar__wrapper">
         <div class="navbar__handler"></div>

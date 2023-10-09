@@ -5,11 +5,9 @@ const bookmarks = document.querySelectorAll(".card__icon");
 // create a function that will toggle the bookmark icon and apply it to all icons
 bookmarks.forEach((bookmark) => {
   bookmark.addEventListener("click", () => {
-    if (bookmark.attributes.src.nodeValue.includes("solid")) {
-      bookmark.setAttribute("src", "./assets/img/bookmark-regular.svg");
-    } else {
-      bookmark.setAttribute("src", "./assets/img/bookmark-solid.svg");
-    }
+    bookmark.attributes.src.nodeValue.includes("solid")
+      ? bookmark.setAttribute("src", "./assets/img/bookmark-regular.svg")
+      : bookmark.setAttribute("src", "./assets/img/bookmark-solid.svg");
   });
 });
 
